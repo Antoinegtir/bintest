@@ -4,6 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-RUN bundle install
-
 CMD ["ruby", "engine.rb"]
