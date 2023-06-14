@@ -16,19 +16,7 @@ Prepare the TOML configuration file: Create a TOML file that defines your tests.
 
 Example TOML file (ftest.toml):
 
-[[test]]
-name = "Test 1 with -n flag"
-command = "./palindrome -n 363"
-expected_stdout = "363 leads to 363 in 0 iteration(s) in base 0"
-expected_stderr = ""
-expected_exit_code = 0
-time_out = 5
-
-name = "Test 2 with error handler"
-command = "./palindrome -p 65 -x 10"
-expected_stdout = "--skip"
-expected_stderr = "invalid argument\n"
-expected_exit_code = 84
+<img src="https://github.com/Antoinegtir/bintest/blob/main/screenshot/toml.png"></img>
 
 Run Binary Testor: Execute the following command in the terminal:
 
@@ -44,15 +32,9 @@ Review the test results: After all tests have been executed, Binary Testor will 
 
 ## Example output:
 
-➜ Test 1 - Passed ✅
+<img src="https://github.com/Antoinegtir/bintest/blob/main/screenshot/notpassed.png"></img>
 
-➜ Test 2 - Failed 🚫
-Expected stdout:
-  -> Expected output 2
-Actual stdout:
-  -> Actual output 2
-
-1/2 tests passed | 0/2 tests crashed
+<img src="https://github.com/Antoinegtir/bintest/blob/main/screenshot/passed.png"></img>
 
 That's it! You can now use Binary Testor to automate the testing of your binary executables and ensure they produce the expected results.
 
