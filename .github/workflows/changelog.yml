@@ -21,7 +21,7 @@ jobs:
       - name: Update Changelog
         run: |
           echo "## [${{ github.sha }}]" >> CHANGELOG.md
-          git log --pretty=format:"- %s" ${{ github.event.before }}..${{ github.sha }} >> CHANGELOG.md
+          git log --pretty=format:"- %s" ${{ github.sha }} >> CHANGELOG.md
 
       - name: Commit and push changes
         run: |
