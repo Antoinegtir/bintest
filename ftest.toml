@@ -1,0 +1,7 @@
+[[test]]
+name = "say hello"
+command = "ruby test.rb"
+expected_stdout = "hello world!"
+expected_stderr = ""
+expected_exit_code = 0
+time_out = 5
