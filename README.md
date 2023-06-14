@@ -2,6 +2,8 @@
 
 Binary Testor is a command-line tool for running tests on binary executables. It allows you to define a set of tests with expected outputs and exit codes and automatically executes them, providing a summary of the test results.
 
+<img src="https://skillicons.dev/icons?i=ruby"/>
+
 ## Usage
 
 Install Ruby: Binary Testor is written in Ruby, so ensure that Ruby is installed on your system.
